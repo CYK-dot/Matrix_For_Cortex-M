@@ -1,10 +1,11 @@
 Matrix_For_Cortex-M
 =======================================
 # introduction 介绍
-本仓库fork自Amoiensis的Matrix_Hub,用于移植到单片机平台上。改动如下:
+本仓库fork自Amoiensis的Matrix_Hub,分离.c与.h，便于移植到单片机平台上。改动如下:
 - 原Matrix.h中的malloc,free,printf,system改为OS_Malloc,OS_Free,OS_Err_Collector,OS_Commander
-- 以上提到的函数存放于Matrix_OS_Config.h中，可以根据不同的硬件平台编写对应的适配函数。
-- 更名state.h为Matrix_Config.h
+- 以上提到的函数存放于Matrix_OS_Config.c中，可以根据不同的硬件平台编写对应的适配函数。
+- 更名state.h为Matrix_Config.h,并拆分出Matrix_OS_Config.c
+- 将matrix.h拆分为Matrix_Hub.c与matrix.h
 
 ---------------------------------------
 # 原作者信息

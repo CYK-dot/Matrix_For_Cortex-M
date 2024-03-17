@@ -35,7 +35,7 @@
  * 3 - M_free/ M_mul/ M_full/ M_Inverse/ M_rank/ M_mul / M_Uptri_/ M_Lowtri_/ M_Diatri_/ M_print
  * */
 /* 进度条显示 */
-#define _progress_bar_ 1
+#define _progress_bar_ 0
 
 
 /* Control Constant - 设置的常数*/
